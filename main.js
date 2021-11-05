@@ -26,7 +26,7 @@ const posts = [
     },
     {
         profilePic: 'https://unsplash.it/300/300?image=16',
-        profileName: 'Phil Mangione',
+        profileName: 'Lucia Montenegro',
         date: '1 ora fa',
         postText: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias',
         picture: 'https://unsplash.it/600/300?image=172',
@@ -34,7 +34,7 @@ const posts = [
     },
     {
         profilePic: 'https://unsplash.it/300/300?image=17',
-        profileName: 'Phil Mangione',
+        profileName: 'Luigi Russo',
         date: '3 mesi fa',
         postText: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias',
         picture: 'https://unsplash.it/600/300?image=173',
@@ -42,7 +42,7 @@ const posts = [
     },
     {
         profilePic: 'https://unsplash.it/300/300?image=18',
-        profileName: 'Phil Mangione',
+        profileName: "Mario D'Antò",
         date: '4 anni fa',
         postText: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias',
         picture: 'https://unsplash.it/600/300?image=174',
@@ -50,7 +50,7 @@ const posts = [
     },
     {
         profilePic: 'https://unsplash.it/300/300?image=19',
-        profileName: 'Phil Mangione',
+        profileName: 'John Doe',
         date: '6 giorni fa',
         postText: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias',
         picture: 'https://unsplash.it/600/300?image=175',
