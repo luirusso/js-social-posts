@@ -6,3 +6,88 @@ Per le immagini va bene utilizzare qualsiasi servizio di placeholder ad es: http
 Inserire a inizio del file JavaScript una sezione di commento dove scrivere gli step richiesti di logica in italiano, per aiutarvi a ragionare prima della stesura del codice.
  */
 
+const posts = [
+    {
+        profilePic: 'https://unsplash.it/300/300?image=15',
+        profileName: 'Phil Mangione',
+        date: '4 mesi fa',
+        postText: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias',
+        picture: 'https://unsplash.it/600/300?image=171',
+        likes: '80',
+    },
+    {
+        profilePic: 'https://unsplash.it/300/300?image=16',
+        profileName: 'Phil Mangione',
+        date: '1 ora fa',
+        postText: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias',
+        picture: 'https://unsplash.it/600/300?image=172',
+        likes: '56',
+    },
+    {
+        profilePic: 'https://unsplash.it/300/300?image=17',
+        profileName: 'Phil Mangione',
+        date: '3 mesi fa',
+        postText: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias',
+        picture: 'https://unsplash.it/600/300?image=173',
+        likes: '2',
+    },
+    {
+        profilePic: 'https://unsplash.it/300/300?image=18',
+        profileName: 'Phil Mangione',
+        date: '4 anni fa',
+        postText: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias',
+        picture: 'https://unsplash.it/600/300?image=174',
+        likes: '29',
+    },
+    {
+        profilePic: 'https://unsplash.it/300/300?image=19',
+        profileName: 'Phil Mangione',
+        date: '6 giorni fa',
+        postText: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias',
+        picture: 'https://unsplash.it/600/300?image=175',
+        likes: '5.4M',
+    },
+];
+
+console.log(posts);
+console.table(posts);
+
+const postsContainer = document.querySelector('.posts-list');
+console.log(postsContainer);
+
+for(let i = 0; i < posts.length; i++) {
+    const postItem = posts[i];
+
+    postsContainer.innerHTML += `
+    <div class="post">
+            <div class="post__header">
+                <div class="post-meta">                    
+                    <div class="post-meta__icon">
+                        <img class="profile-pic" src="${postItem.profilePic}" alt="${postItem.profileName}">                    
+                    </div>
+                    <div class="post-meta__data">
+                        <div class="post-meta__author">${postItem.profileName}</div>
+                        <div class="post-meta__time">${postItem.date}</div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="post__text">${postItem.postText}</div>
+            <div class="post__image">
+                <img src="${postItem.picture}" alt="">
+            </div>
+            <div class="post__footer">
+                <div class="likes js-likes">
+                    <div class="likes__cta">
+                        <a class="like-button  js-like-button" href="#" data-postid="1">
+                            <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
+                            <span class="like-button__label">Mi Piace</span>
+                        </a>
+                    </div>
+                    <div class="likes__counter">
+                        Piace a <b id="like-counter-1" class="js-likes-counter">${postItem.likes}</b> persone
+                    </div>
+                </div> 
+            </div>            
+    </div>`;
+}
+
